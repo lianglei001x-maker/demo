@@ -7,7 +7,7 @@
         <mxCell id="95ja5izLH8AqG7hw8yMq-3" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="95ja5izLH8AqG7hw8yMq-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="电流ADC中断" vertex="1">
+        <mxCell id="95ja5izLH8AqG7hw8yMq-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="电流ADC中断&lt;div&gt;mcpwm_foc.c&lt;/div&gt;" vertex="1">
           <mxGeometry height="40" width="120" x="270" y="20" as="geometry" />
         </mxCell>
         <mxCell id="95ja5izLH8AqG7hw8yMq-5" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-4">
@@ -19,11 +19,73 @@
         <mxCell id="95ja5izLH8AqG7hw8yMq-7" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="95ja5izLH8AqG7hw8yMq-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="更新占空比" vertex="1">
+        <mxCell id="95ja5izLH8AqG7hw8yMq-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="更新下一时刻的占空比," vertex="1">
           <mxGeometry height="40" width="180" x="240" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-9" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-8">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="95ja5izLH8AqG7hw8yMq-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="计算Ialpha，Ibeta" vertex="1">
           <mxGeometry height="40" width="180" x="240" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-11" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="95ja5izLH8AqG7hw8yMq-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="根据上一时刻的中断值，计算mod_alpha,mod_beta" vertex="1">
+          <mxGeometry height="40" width="180" x="240" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="根据mod_alpha,mod_beta，计算占空比，（没有映射到输出）" vertex="1">
+          <mxGeometry height="40" width="180" x="240" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-12" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="329.5" y="500" as="sourcePoint" />
+            <mxPoint x="329.5" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-25" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="保存这一时刻的三相电流原始值" vertex="1">
+          <mxGeometry height="45.5" width="180" x="234" y="564.5" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-26" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-30" connectable="0" parent="95ja5izLH8AqG7hw8yMq-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="相电流采样" vertex="1">
+          <mxGeometry relative="1" x="-0.3645" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-27" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-28" connectable="0" parent="95ja5izLH8AqG7hw8yMq-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="高电流模式" vertex="1">
+          <mxGeometry relative="1" x="-0.2998" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-23" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="判断电流采样模式" vertex="1">
+          <mxGeometry height="80" width="170" x="239" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-33" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="95ja5izLH8AqG7hw8yMq-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="电流的最大值通过计算，另外两计算得来" vertex="1">
+          <mxGeometry height="45.5" width="180" x="59" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-34" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="电流的最大值通过计算，另外两计算得来" vertex="1">
+          <mxGeometry height="45.5" width="180" x="414" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="电流滤波" vertex="1">
+          <mxGeometry height="45.5" width="180" x="229" y="900" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
