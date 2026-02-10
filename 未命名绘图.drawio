@@ -96,10 +96,46 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Ef5m_RRa4LHBVteXwrcj" name="FOC初始化">
-    <mxGraphModel dx="1418" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="992" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-5" edge="1" parent="1" source="NGmZHJeiSzr17i3dNTZH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NGmZHJeiSzr17i3dNTZH-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="开启ADC" vertex="1">
+          <mxGeometry height="30" width="220" x="300" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-3" edge="1" parent="1" source="NGmZHJeiSzr17i3dNTZH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="NGmZHJeiSzr17i3dNTZH-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="开启Timer" vertex="1">
+          <mxGeometry height="30" width="220" x="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-8" edge="1" parent="1" source="NGmZHJeiSzr17i3dNTZH-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NGmZHJeiSzr17i3dNTZH-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="电流和电压采样校准" vertex="1">
+          <mxGeometry height="30" width="220" x="300" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-9" edge="1" parent="1" source="NGmZHJeiSzr17i3dNTZH-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NGmZHJeiSzr17i3dNTZH-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="创建定时器线程" vertex="1">
+          <mxGeometry height="30" width="220" x="300" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-11" edge="1" parent="1" source="NGmZHJeiSzr17i3dNTZH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NGmZHJeiSzr17i3dNTZH-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="创建高频注入线程" vertex="1">
+          <mxGeometry height="30" width="220" x="300" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="创建PID线程" vertex="1">
+          <mxGeometry height="30" width="220" x="300" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="NGmZHJeiSzr17i3dNTZH-12" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;电压电流校准原理&lt;/h1&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;分为发波校准和不发波校准，发波校准是三相都发送50% 占空比PWM波，此时输出电压应该为0，输出电流也为0，采集1000次,取平均值。&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 不发波模式是直接设置为0.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="430" x="180" y="540" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
