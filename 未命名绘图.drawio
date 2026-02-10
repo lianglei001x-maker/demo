@@ -4,8 +4,26 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="95ja5izLH8AqG7hw8yMq-3" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="95ja5izLH8AqG7hw8yMq-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="电流ADC中断" vertex="1">
-          <mxGeometry height="60" width="120" x="270" y="20" as="geometry" />
+          <mxGeometry height="40" width="120" x="270" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-5" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="根据ADC值，计算两相电流值" vertex="1">
+          <mxGeometry height="40" width="180" x="240" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-7" edge="1" parent="1" source="95ja5izLH8AqG7hw8yMq-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="95ja5izLH8AqG7hw8yMq-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="更新占空比" vertex="1">
+          <mxGeometry height="40" width="180" x="240" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="95ja5izLH8AqG7hw8yMq-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="计算Ialpha，Ibeta" vertex="1">
+          <mxGeometry height="40" width="180" x="240" y="260" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
