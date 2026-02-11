@@ -879,7 +879,7 @@
         <mxCell id="UgXXQBEXcRp8c6ITumya-53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Park反变换" vertex="1">
           <mxGeometry height="30" width="120" x="680" y="1150" as="geometry" />
         </mxCell>
-        <mxCell id="UgXXQBEXcRp8c6ITumya-56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SVM" vertex="1">
+        <mxCell id="UgXXQBEXcRp8c6ITumya-56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="更新占空比" vertex="1">
           <mxGeometry height="30" width="120" x="325" y="1060" as="geometry" />
         </mxCell>
       </root>
