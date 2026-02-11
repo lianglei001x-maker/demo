@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.8" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.8" pages="5">
   <diagram name="第 1 页" id="g8iHExKhDXa3ziU1ruln">
     <mxGraphModel dx="1418" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -689,6 +689,26 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="J_E8wwQ_nWD89ZUMEOof-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PLL估算转速" vertex="1">
+          <mxGeometry height="40" width="120" x="290" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="J_E8wwQ_nWD89ZUMEOof-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="观测器更新" vertex="1">
+          <mxGeometry height="40" width="120" x="290" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="y6YcMGQCjiVGBYinaYU9" name="电流闭环控制">
+    <mxGraphModel dx="992" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UgXXQBEXcRp8c6ITumya-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UgXXQBEXcRp8c6ITumya-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PLL估算转速" vertex="1">
+          <mxGeometry height="40" width="120" x="320" y="180" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
